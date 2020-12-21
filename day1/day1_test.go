@@ -15,7 +15,7 @@ func getDay1Input() ([]int, error) {
 	if err != nil {
 		return nil, fmt.Errorf("something went wrong")
 	}
-	data, err := util.ReadInput(path.Join(dir, "input1.txt"))
+	data, err := util.ReadFile(path.Join(dir, "input1.txt"))
 	if err != nil {
 		return nil, fmt.Errorf("cannot read input1.txt")
 	}
