@@ -1,0 +1,11 @@
+package {{.Package}}
+
+// Note:This is generated code, do not edit
+
+func Get{{.Name}}FrequencyMap(arr []{{.Datatype}}) map[{{.Datatype}}]int {
+	freqMap := make(map[{{.Datatype}}]int)
+	for _, val := range arr {
+		freqMap[val]++
+	}
+	return freqMap
+}
