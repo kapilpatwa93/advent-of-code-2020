@@ -37,3 +37,14 @@ func TestPart1(t *testing.T) {
 	res := Part1(areaMap, rightInc, bottomInc, tree)
 	fmt.Println(res)
 }
+
+func TestPart2(t *testing.T) {
+	areaMap, err := getInput()
+	if err != nil {
+		t.Fatal(err)
+	}
+	incrCoordinates := [][]int{{1, 1}, {3, 1}, {5, 1}, {7, 1}, {1, 2}}
+	tree := "#"
+	res := Part2(areaMap, incrCoordinates, tree)
+	fmt.Println(res)
+}
